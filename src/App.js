@@ -37,7 +37,7 @@ function App() {
         <Route path="/dashboard" element={<PrivateRoute />}>
           <Route path="user" element={<Dashboard />} />
           <Route path="user/orders" element={<Orders />} />
-          <Route path="user/profile" element={<Profile />} />
+          <Route path="user/profile" element={<Profile />} /> 
         </Route>
         <Route path="/dashboard" element={<AdminRoute />}>
           <Route path="admin" element={<AdminDashboard />} />
@@ -59,6 +59,6 @@ function App() {
       </Routes>
     </>
   );
-}
+};
 
 export default App;
